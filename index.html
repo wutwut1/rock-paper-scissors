@@ -35,9 +35,9 @@
   .gear { display: none; }
   .score { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: clamp(14px, 2.4vw, 20px); }
   .score b { font-size: 1.5em; min-width: 1.4em; display: inline-block; text-align: center; }
-  .score .you b { color: var(--win); }
-  .score .bot b { color: var(--lose); }
-  .score .tie b { color: var(--draw); }
+  .score .s-you b { color: var(--win); }
+  .score .s-bot b { color: var(--lose); }
+  .score .s-tie b { color: var(--draw); }
   .score b.bump { animation: bump .45s ease; }
   @keyframes bump { 40% { transform: scale(1.7); } }
   .controls { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
@@ -286,9 +286,9 @@
 <header id="header">
   <h1><span class="h-ico">✊✋✌️ </span>เป่ายิ้งฉุบ <span class="ar">AR</span></h1>
   <div class="score">
-    <div class="you">🧑 คุณ <b id="sYou">0</b></div>
-    <div class="tie">🤝 เสมอ <b id="sTie">0</b></div>
-    <div class="bot">🤖 บอท <b id="sBot">0</b></div>
+    <div class="s-you">🧑 คุณ <b id="sYou">0</b></div>
+    <div class="s-tie">🤝 เสมอ <b id="sTie">0</b></div>
+    <div class="s-bot">🤖 บอท <b id="sBot">0</b></div>
   </div>
   <div class="controls">
     ความเร็ว
